@@ -17,13 +17,13 @@ function countdown(date, elementId) {
   }, 1000);
 }
 
-countdown('2025-11-19, 19:00:00', 'Resurgence'); // Resurgence Rotation
+countdown('2025-12-17, 19:00:00', 'Resurgence'); // Resurgence Rotation
 countdown('2025-12-01, 16:00:00', 'IGE'); // In Game Events
 countdown('2025-10-26, 23:00:00', 'Nightwave'); // New Nightwave
 
 countdown('2025-11-25, 19:00:00', 'Devshort'); // Tuesdays
-countdown('2025-11-19, 20:00:00', 'WF-int'); // Wednesdays
-countdown('2025-11-20, 23:00:00', 'PrimeTime'); // Thursdays
+countdown('2025-11-26, 20:00:00', 'WF-int'); // Wednesdays
+countdown('2025-11-27, 23:00:00', 'PrimeTime'); // Thursdays
 countdown('2025-11-28, 19:00:00', 'Devstream'); // Last Friday of Month
 
 countdown('2025-12-17, 16:00:00', 'WF-prime'); // Prime Warframe release
