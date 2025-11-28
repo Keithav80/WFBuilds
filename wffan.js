@@ -26,6 +26,6 @@ countdown('2025-11-19, 20:00:00', 'WF-int'); // Wednesdays
 countdown('2025-11-27, 23:00:00', 'PrimeTime'); // Thursdays
 countdown('2025-11-28, 19:00:00', 'Devstream'); // Last Friday of Month
 
-countdown('2025-12-17, 16:00:00', 'WF-prime'); // Prime Warframe release
-countdown('2025-12-17, 16:00:00', 'Update'); // Main & Interim Updates
+countdown('2025-12-10, 16:00:00', 'WF-prime'); // Prime Warframe release
+countdown('2025-12-10, 16:00:00', 'Update'); // Main & Interim Updates
 
