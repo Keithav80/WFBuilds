@@ -197,8 +197,7 @@ main {
   text-align: center;
   font-weight: normal;
   font-size: 0.9em;
-  padding-top: 0.2em;
-  padding-inline: 0.2em;
+  padding: 0.2em;
 }
 
 .card-2 {
@@ -209,8 +208,7 @@ main {
   text-align: center;
   font-weight: normal;
   font-size: 0.9em;
-  padding-top: 0.2em;
-  padding-inline: 0.2em;
+  padding: 0.2em;
 }
 
 .card-head-1 {
@@ -219,6 +217,7 @@ main {
   border-radius: 8px;
   text-align: center;
   font-weight: normal;
+  padding-inline: 1em;
 }
 
 h1 {
@@ -418,15 +417,53 @@ footer {
   filter: drop-shadow(0 0 0.5rem var(--link-hover));
 }
 
+.timerBar {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  margin: 1em;
+}
+
+.timeHold {
+  display: grid;
+  background-color: var(--card-hold);
+  padding: .5em;
+  border-radius: 8px;
+  text-align: center;
+  gap: .5em;
+  width: 200px;
+  color: var(--background);
+  align-content: start;
+}
+
+.timeCard {
+  background-color: var(--accent);
+  color: var(--bold);
+  font-weight: 300;
+  padding: .2em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#timeHead {
+  background-color: var(--h1);
+  color: var(--background);
+  font-weight: 300;
+  padding-inline: 1em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+#Update,
+#WF-prime,
 #Resurgence,
-#IGE,
+#IGE1,
+#IGE2,
 #Nightwave,
 #Devshort,
 #WF-int,
 #PrimeTime,
-#Devstream,
-#WF-prime,
-#Update {
+#Devstream {
   color: var(--link-hover);
   font-weight: 400;
 }
