@@ -25,7 +25,8 @@ countdown('2025-12-01, 16:00:00', 'IGE1'); // In Game Event 1
 countdown('2025-12-16, 16:00:00', 'IGE2'); // In Game Event 2
 countdown('2025-10-26, 23:00:00', 'Nightwave'); // Nightwave
 
-countdown('2025-12-09, 19:00:00', 'Devshort'); // Tuesdays
-countdown('2025-12-10, 20:00:00', 'WF-int'); // Wednesdays
-countdown('2025-12-11, 23:00:00', 'PrimeTime'); // Thursdays
+countdown('2025-12-16, 19:00:00', 'Devshort'); // Tuesdays
+countdown('2025-12-17, 20:00:00', 'WF-int'); // Wednesdays
+countdown('2025-12-18, 23:00:00', 'PrimeTime'); // Thursdays
 countdown('2026-01-30, 19:00:00', 'Devstream'); // Last Friday of Month
+
