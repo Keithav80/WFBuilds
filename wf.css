@@ -417,43 +417,6 @@ footer {
   filter: drop-shadow(0 0 0.5rem var(--link-hover));
 }
 
-.timerBar {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  margin: 1em;
-}
-
-.timeHold {
-  display: grid;
-  background-color: var(--card-hold);
-  padding: .5em;
-  border-radius: 8px;
-  text-align: center;
-  gap: .5em;
-  width: 200px;
-  color: var(--background);
-  align-content: start;
-}
-
-.timeCard {
-  background-color: var(--accent);
-  color: var(--bold);
-  font-weight: 300;
-  padding: .2em;
-  border-radius: 8px;
-  text-align: center;
-}
-
-#timeHead {
-  background-color: var(--h1);
-  color: var(--background);
-  font-weight: 300;
-  padding-inline: 1em;
-  border-radius: 8px;
-  text-align: center;
-}
-
 #Update,
 #WF-prime,
 #Resurgence,
@@ -466,4 +429,62 @@ footer {
 #Devstream {
   color: var(--link-hover);
   font-weight: 400;
+}
+
+/* Experimental */
+
+.Head {
+  background-color: var(--accent);
+  padding-inline: .5em;
+  margin-inline: .5em;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.Head h2{
+  color: black;
+  text-align: left;
+}
+
+.timerBar {
+  display: grid;
+  padding: .5em;
+  margin-inline: .5em;
+  background-color: black;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.Builds {
+  background-color: var(--card-hold);
+  padding-inline: .5em;
+  margin-inline: .5em;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.Builds h2{
+  color: #f3f3f3;
+  text-align: left;
+}
+
+.buildBar {
+  display: grid;
+  padding: .5em;
+  margin-inline: .5em;
+  background-color: black;
+  border-radius: 0px 0px 8px 8px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+#eq {
+  display: grid;
+  border: solid white 1px;
+}
+
+.buildBar1 {
+  display: grid;
+  padding: .5em;
+  margin-inline: .5em;
+  background-color: black;
+  border-radius: 0px 0px 8px 8px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5em
 }
