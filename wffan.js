@@ -21,7 +21,7 @@ countdown('2025-12-10, 16:00:00', 'WF-prime'); // Prime Warframe release
 countdown('2026-03-11, 16:00:00', 'Update'); // Main & Interim Updates
 
 countdown('2026-02-12, 19:00:00', 'Resurgence'); // Resurgence Rotation
-countdown('2025-12-01, 16:00:00', 'IGE1'); // Annual Events
+countdown('2026-02-01, 16:00:00', 'IGE1'); // Annual Events
 countdown('2025-12-16, 16:00:00', 'IGE2'); // Event 2 (if multiple)
 countdown('2025-10-26, 23:00:00', 'Nightwave'); // Nightwave
 
