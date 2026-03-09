@@ -10,24 +10,51 @@
 
 /* colour Palette */
 :root {
---background: hsl(0, 0%, 11%);
---link: hsl(203, 92%, 75%);
---link-hover: hsl(51, 100%, 50%);
---accent: hsl(255, 20%, 47%);
---card-hold: hsl(158, 45%, 45%);
---time-v1: hsl(11, 30%, 37%);
---arcane: hsl(32, 96%, 51%);
---h1: hsl(0, 0%, 95%);
---h2: hsl(0, 0%, 78%);
---text: hsl(0, 0%, 65%);
---bold: hsl(330, 100%, 98%);
---aPage: hsl(303, 83%, 70%);
+  --background: hsl(0, 0%, 11%);
+  --text: hsl(0, 0%, 65%);
+  --bold: hsl(330, 100%, 98%);
+
+  /* Link behaviour */
+  --link: hsl(203, 92%, 75%);
+  --link-hover: hsl(51, 100%, 50%);
+  --link-visited: hsl(0, 0%, 65%);
+
+  /* Countdown Colours */
+  --main: hsl(51, 100%, 50%);
+  --other: hsl(198, 59%, 32%);
+
+  /* Head Banners */
+  --primary: hsl(255, 20%, 47%);
+  --secondary: hsl(158, 45%, 45%);
+
+  /* Information */
+  --content: hsl(0, 0%, 0%);
+  --note: hsl(0, 100%, 39%);
+}
+
+#Update,
+#IGE1,
+#IGE2,
+#DevShort,
+#eTenno,
+#primeTime,
+#Devstream {
+  color: var(--main);
+  font-weight: 400;
+}
+
+#Resurgence,
+#TennoCon {
+  color: var(--other);
+  font-weight: 400;
 }
 
 body {
   background-color: var(--background);
   flex-direction: column;
   font-weight: 300;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 html {
@@ -44,56 +71,74 @@ a:hover {
 }
 
 :visited {
-  color: var(--link);
+  color: var(--link-visited);
 }
 
 header {
   display: flex;
+  grid-template-columns: repeat(2, 1fr);
   padding-inline: 0.25em;
-  height: 75px;
-  background-image: linear-gradient(to bottom, var(--accent), var(--background) 90%);
+  height: 100px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary),
+    var(--background) 90%
+  );
   justify-content: space-between;
   align-items: center;
 }
 
-header img {
-  width: 125px;
+.headL {
+  display: grid;
+  gap: .25em;
+  justify-items: center;
+  align-items: center;
 }
 
-.gold-box {
+#semiCircle {
+  border-radius: 10em 10em 0 0;
+  border: 2px solid var(--link-hover);
+  width: 75px;
+  height: 38px;
+  background-image: conic-gradient(
+    from 10deg at 50% 100%,
+    var(--content) 180deg,
+    var(--bold) 180deg
+  );
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#gold-box {
   background-image: linear-gradient(
     to top,
-    rgba(253, 215, 0, 1),
-    rgba(253, 215, 0, 0.5)
+    hsl(51, 100%, 50%),
+    hsl(50, 100%, 49%)
   );
   border-radius: 8px;
   color: var(--background);
   font-weight: bold;
-  font-size: x-large;
+  font-size: large;
   padding-inline: 0.25em;
-  margin: 0.25em;
-  filter: drop-shadow(0 0 0.5rem var(--link-hover));
+  filter: drop-shadow(0 0 0.5em var(--link-hover));
+  text-align: center;
 }
 
-.name {
+#name {
   color: var(--bold);
   font-weight: bold;
   font-size: x-large;
-  margin: 0.25em;
 }
 
-.white-box {
-  background-image: linear-gradient(
-    to bottom,
-    rgba(255, 245, 243, 1),
-    rgba(255, 245, 243, 0.3)
-  );
-  border-radius: 8px;
-  color: var(--background);
-  font-weight: bold;
-  font-size: x-large;
-  padding-inline: 0.25em;
-  margin: 0.25em;
+.headR {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: .25em;
+  padding: .25em;
+}
+
+.headR img {
+  height: 40px;
 }
 
 main {
@@ -102,174 +147,236 @@ main {
   padding-top: 1em;
 }
 
-.main-grid {
-  display: grid;
-  flex-direction: column;
-  grid-template-columns: 1fr 5fr;
-  margin: 0.25em;
-  gap: 0.5em;
-}
-
-.main-sub {
-  display: grid;
-  flex-direction: column;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.5em;
-  padding: 0.25em;
-
-  /*border: 1px solid greenyellow;*/
-}
-
-.frame-grid {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 0.25em;
-  margin-inline: 0.25em;
-
-  /*border: 1px solid yellow;*/
-}
-
-.frame-grid-sub {
+.Head {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
-  /*border: 1px solid red;*/
+  background-color: var(--primary);
+  padding-inline: 0.5em;
+  margin-inline: 0.5em;
+  border-radius: 8px 8px 0px 0px;
+  align-items: center;
 }
 
-.button {
-  display: flex;
-  width: 100%;
-  background-color: var(--accent);
-  border-radius: 8px;
-  border: 0;
-  color: var(--h1);
-  font-size: 1.1em;
-  font-weight: 300;
-  margin-bottom: 0.2em;
-  padding: 0.25em;
-  transition-duration: 0.3s;
-  gap: 1em;
+.Head h2 {
+  color: var(--content);
+  text-align: left;
 }
 
-.button-active {
-  display: flex;
-  width: 100%;
-  background-color: var(--aPage);
-  border-radius: 8px;
-  border: 0;
-  color: var(--background);
-  font-size: 1.1em;
-  font-weight: 300;
-  margin-bottom: 0.2em;
-  padding: 0.25em;
-  gap: 1em;
+.subHead {
+  text-align: right;
+  font-size: small;
+  color: var(--bold);
 }
 
-.button:hover {
-  background-color: var(--card-hold);
+.updateBar {
+  display: grid;
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--content);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#pleaseNote {
+  display: grid;
+  padding-inline: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--bold);
+  color: var(--note);
   font-weight: 400;
+  font-style: italic;
+  font-size: smaller;
+  border-radius: 0px 0px 8px 8px;
+  height: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.teach {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+}
+
+.teach img {
+  width: 400px;
+}
+
+.textTenno {
+  display: grid;
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  border-radius: 8px;
+  gap: 0.5em;
+}
+
+.textTenno img {
+  width: 300px;
+}
+
+.recolour {
+  filter: invert(91%) sepia(95%) saturate(343%) hue-rotate(215deg)
+    brightness(109%) contrast(105%);
+}
+
+.Builds {
+  background-color: var(--secondary);
+  padding-inline: 0.5em;
+  margin-inline: 0.5em;
+  border-radius: 8px 8px 0px 0px;
+  align-items: center;
+  text-align: center;
   color: var(--background);
 }
 
-.card-bg {
-  background-color: var(--card-hold);
-  border-radius: 8px;
-  font-size: 1em;
-  color: var(--background);
+.Builds h2 {
+  color: var(--content);
   text-align: center;
-  padding-top: 0.1em;
-  padding-bottom: 0.1em;
 }
 
-.card-bg-2 {
-  border-radius: 8px;
-  border: 1px solid var(--h1);
-  font-size: 1em;
-  color: var(--h1);
-  padding-inline: 1em;
+.buildBar1 {
+  display: grid;
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--content);
+  border-radius: 0px 0px 8px 0px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5em;
 }
 
-.card-1 {
-  background-color: var(--time-v1);
-  color: var(--h1);
+.buildBar-def {
+  display: grid;
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--content);
   border-radius: 8px;
-  margin: 0.5em;
-  text-align: center;
-  font-weight: normal;
-  font-size: 0.9em;
-  padding: 0.2em;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5em;
 }
 
-.card-2 {
-  background-color: var(--accent);
-  color: var(--h1);
+.arsenal {
+  align-content: end;
   border-radius: 8px;
-  margin: 0.5em;
+  justify-items: center;
   text-align: center;
-  font-weight: normal;
-  font-size: 0.9em;
-  padding: 0.2em;
+  background-image: linear-gradient(var(--background) 55%, var(--primary));
+  cursor: pointer;
+  color: var(--content);
+  font-weight: 300;
 }
 
-.card-head-1 {
-  background-color: var(--h1);
-  color: var(--background);
-  border-radius: 8px;
-  text-align: center;
-  font-weight: normal;
-  padding-inline: 1em;
+.arsenal img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
 }
 
-h1 {
-  color: var(--h1);
-  text-align: center;
+.arsenal:hover {
+  color: var(--bold);
   font-weight: 600;
+  background-image: linear-gradient(var(--background) 55%, var(--secondary));
 }
 
-.note {
-  background-color: var(--background);
-  color: var(--text);
+.progress {
+  position: relative;
+  width: 100%;
+  height: 1.5em;
+  border-radius: 1.5em;
+  color: var(--other);
+  font-weight: 400;
+}
+
+.progress::before {
+  content: attr(data-label);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0.25em;
+  width: calc(var(--width, 0) * 1%);
+  min-width: 0.5em;
+  max-width: calc(100% - 0.05em);
+  background-color: var(--bold);
+  border-radius: 0px 8px 8px 8px;
+  border-right: solid var(--link-hover);
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  height: 20px;
+}
+
+.corner {
+  display: flex;
+  --s: 30px;
+  border: 3px solid var(--secondary);
   border-radius: 8px;
   padding: 0.5em;
-  border: 2px solid var(--arcane);
-  font-style: italic;
-  grid-column: span 5;
+  margin-inline: 0.5em;
+  background: var(--content) content-box;
+  mask:
+    conic-gradient(var(--content) 0 0) content-box,
+    conic-gradient(at var(--s) var(--s), #0000 75%, var(--content) 0) 0 0 /
+      calc(100% - var(--s)) calc(100% - var(--s));
+  justify-content: center;
 }
 
-img {
-  width: 1em;
-}
-
-h2 {
-  color: var(--h2);
-  text-align: center;
-  font-weight: 400;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-}
-
-#container .contents {
-  overflow: auto;
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
-}
-
-#container table th {
   text-align: left;
+  padding: 0.5em;
+  color: var(--bold);
 }
 
-#container .right {
-  text-align: right;
-}
-
-#container .left {
-  text-align: left;
-}
-
-#container .center {
+.content h2 {
+  text-decoration: underline;
   text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#priority {
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+#priority h3 {
+  color: var(--secondary);
+}
+
+ul li {
+  margin-inline: 1.5em;
+}
+
+.listParent {
+  color: var(--link-hover);
+}
+
+.listChild {
+  color: var(--text);
+}
+
+.buildBar2 {
+  display: grid;
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--content);
+  grid-template-columns: 1fr 3fr;
+}
+
+.buildBar3 {
+  display: grid;
+  padding-inline: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--bold);
+  color: var(--other);
+  border-radius: 0px 0px 8px 8px;
+  font-weight: 500;
+}
+
+.timerBar {
+  display: grid;
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--content);
 }
 
 footer {
@@ -281,210 +388,47 @@ footer {
   text-align: center;
 }
 
-.card-base {
+.modWarframe {
   display: grid;
-  background-color: var(--background);
-  gap: 0.25em;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--content);
+  gap: 0.5em;
 }
 
-.frame {
-  grid-column: 1 / span 2;
-  background-image: radial-gradient(var(--card-hold), var(--background) 75%);
+.modCard {
+  border: solid 1px var(--bold);
+  border-radius: 12px;
 }
 
-.card-3 {
-  background-color: var(--arcane);
-  color: var(--background);
-  border-radius: 8px;
-  margin: 0.5em;
-  text-align: center;
-  font-weight: normal;
-  font-size: 0.9em;
-  padding-top: 0.2em;
-  padding-inline: 0.2em;
-  filter: drop-shadow(7px 7px 4px rgba(50, 50, 50));
+#modCard-head {
+  background: var(--bold);
+  color: var(--content);
+  border-radius: 8px 8px 0px 0px;
 }
 
-.card-4 {
-  border: 1px solid var(--arcane);
-  background-color: var(--background);
-  color: var(--h1);
-  border-radius: 8px;
-  margin: 0.5em;
-  text-align: center;
-  font-weight: 300;
-  font-size: 0.9em;
-  padding-top: 0.2em;
-  padding-inline: 0.2em;
-  filter: drop-shadow(7px 7px 4px rgba(50, 50, 50));
-}
-
-.card-head-2 {
-  background-color: var(--time-v1);
-  color: var(--h1);
-  border-radius: 8px;
-  text-align: center;
-  font-weight: normal;
-}
-
-.teach {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-
-.teach img {
-  width: 400px;
-}
-
-.recolour {
-  filter: invert(91%) sepia(95%) saturate(343%) hue-rotate(215deg)
-    brightness(109%) contrast(105%);
-}
-
-.reskin {
-  filter: invert(91%) sepia(13%) saturate(1572%) hue-rotate(57deg) brightness(102%) contrast(86%);
-}
-
-.arsenal {
-  align-content: end;
-  border-radius: 8px;
-  justify-items: center;
-  text-align: center;
-  background-image: linear-gradient(var(--background) 55%, var(--accent));
-  cursor: pointer;
-  color: var(--background);
-
-  /*border: 1px solid yellow;*/
-}
-
-.arsenal img {
-  width: 150px;
-  max-width: 100%;
-  height: auto;
-
-  /*border: 1px solid blue;*/
-}
-
-.arsenal:hover {
-  color: var(--bold);
-  font-weight: 400;
-  background-image: linear-gradient(var(--background) 55%, var(--card-hold));
-}
-
-.note-build {
-  background-color: var(--card-hold);
-  border-radius: 8px;
-  color: var(--background);
-  text-align: center;
-  align-content: center;
-  font-weight: 350;
-  height: fit-content;
-  margin-inline: 0.25em;
-  padding: 0.25em;
-}
-
-.progress {
-  position: relative;
-  width: 100%;
-  height: 1.5em;
-  border-radius: 1.5em;
-  color: var(--link-hover);
-}
-
-.progress::before {
-  content: attr(data-label);
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 0.25em;
-  top: 0.25em;
-  bottom: 0.25em;
-  width: calc(var(--width, 0) * 1%);
-  min-width: 0.5rem;
-  max-width: calc(100% - 0.05em);
-  background-color: var(--accent);
-  border-radius: 0.5em;
+#modCard-body {
   padding: 0.5em;
 }
 
-.semiCircle {
-  border-radius: 10rem 10rem 0 0;
-  border: 2px solid var(--link-hover);
-  width: 100px;
-  height: 50px;
-  background-image: conic-gradient(from 10deg at 50% 100%, #1c1c1c 180deg, #f3f3f3 180deg);
-  filter: drop-shadow(0 0 0.5rem var(--link-hover));
+.arcaneCard {
+  border: solid 1px var(--link-hover);
+  border-radius: 12px;
 }
 
-#Update,
-#WF-prime,
-#Resurgence,
-#IGE1,
-#IGE2,
-#Nightwave,
-#Devshort,
-#WF-int,
-#PrimeTime,
-#Devstream {
-  color: var(--link-hover);
-  font-weight: 400;
-}
-
-/* Experimental */
-
-.Head {
-  background-color: var(--accent);
-  padding-inline: .5em;
-  margin-inline: .5em;
+#arcaneCard-head {
+  background: var(--link-hover);
+  color: #1c1c1c;
   border-radius: 8px 8px 0px 0px;
 }
 
-.Head h2{
-  color: black;
-  text-align: left;
-}
-
-.timerBar {
+.ofNote {
   display: grid;
-  padding: .5em;
-  margin-inline: .5em;
-  background-color: black;
+  padding-inline: 0.5em;
+  margin-inline: 0.5em;
+  background-color: var(--secondary);
+  color: #1c1c1c;
   border-radius: 0px 0px 8px 8px;
-}
-
-.Builds {
-  background-color: var(--card-hold);
-  padding-inline: .5em;
-  margin-inline: .5em;
-  border-radius: 8px 8px 0px 0px;
-}
-
-.Builds h2{
-  color: #f3f3f3;
-  text-align: left;
-}
-
-.buildBar {
-  display: grid;
-  padding: .5em;
-  margin-inline: .5em;
-  background-color: black;
-  border-radius: 0px 0px 8px 8px;
-  grid-template-columns: repeat(5, 1fr);
-}
-
-#eq {
-  display: grid;
-  border: solid white 1px;
-}
-
-.buildBar1 {
-  display: grid;
-  padding: .5em;
-  margin-inline: .5em;
-  background-color: black;
-  border-radius: 0px 0px 8px 8px;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.5em
+  font-weight: 500;
 }

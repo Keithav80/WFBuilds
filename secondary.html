@@ -5,215 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="wf.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Secondary</title>
+  <title>Siikr - Secondary Build</title>
 </head>
 <body>
   <header>
-    <div>
-      <span class="gold-box">L1</span>
-      <span class="name">SIIKR</span>
+    <div class="headL">
+      <div id="semiCircle"></div>
+      <div id="gold-box">LR2</div>
+      <div id="name">SIIKR</div>
     </div>
-    <div class="semiCircle"></div>
-    <div>      
-      <span class="white-box">Switch</span>
+    <div class="headR">      
+        <img class="recolour" src="NS1.svg" alt="Nintendo Switch">
+        <img class="recolour" src="Steam.svg" alt="Steam">
+        <img class="recolour" src="AOS.svg" alt="Android">
     </div>
   </header>
 
   <main>
-    <div class="frame-grid">
-      <nav>
-        <button class="button" onclick="document.location='index.html'">Home</button>
-        <button class="button" onclick="document.location='frame.html'">Warframe</button>
-        <button class="button" onclick="document.location='primary.html'">Primary</button>
-        <button class="button-active" onclick="document.location='secondary.html'">Secondary</button>
-        <button class="button" onclick="document.location='melee.html'">Melee</button>
-        <button class="button" onclick="document.location='companion.html'">Companion</button>
-        <element hidden><button class="button" onclick="document.location=''">Fashion</button></element>        
-      </nav>
 
-      <div class="frame-grid-sub">
-        <div class="frame"><h2>Ocucor</h2>
-          <div class="note-build">
-            <p>Forma: 7</p>
-          </div>
+    <div>
+      <div class="Builds">
+        <div><h2>2025 Year In Review Loadout</h2><p style="color: var(--bold)">Select to view builds</p></div>
+      </div>
+      <div class="buildBar-def">
+        <div class="arsenal">
+          <div onclick="document.location='frame.html'"><img src="Warframe.png" alt="Warframe, Ivara Prime"></div>
+          <div>Ivara Prime</div>
         </div>
-        
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Ruinous Extension</td>
-                    <td class="right">5<img src="polNaramon.svg" alt="Naramon Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+8m Beam Range</p>
+        <div class="arsenal">
+          <div onclick="document.location='primary.html'"><img src="Primary.png" alt="Primary Weapon, Fulmin Prime"></div>
+          <div>Fulmin Prime</div>
         </div>
+        <div class="arsenal">
+          <div onclick="document.location='index.html'"><img src="LotusFlower.png" alt="Home"></div><br>
+          <div>Home</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='melee.html'"><img src="Melee.png" alt="Melee Weapon, Praedos"></div>
+          <div>Praedos</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='companion.html'"><img src="Companion.png" alt="Companion, Carrier Prime"></div>
+          <div>Carrier Prime</div>
+        </div>
+      </div>
+    </div><br>
 
-        <div class="card-3">
-          <div class="card-head-2">Secondary Merciless</div>
-          <p>On Kill:<br>
-          +30% Damage for 4s.<br>
-          Stacks up to 12x.<br>
-          +30% Reload Speed</p>
+    <div class="Head"><h2>Ocucor</h2></div>
+      <div class="modWarframe">
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Ruinous Extension</p></div>
+          <div id="modCard-body"><p>+8m Beam Range</p></div>
         </div>
+        <div></div>
+        <div></div>
+        <br>
 
-        <div><br></div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Galvanized Shot</p></div>
+          <div id="modCard-body"><p>+80% Status Chance On Kill:<br>+40% Direct Damage per Status Type affecting the target for 14s. Stacks up to 3x.</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Galvanized Diffusion</p></div>
+          <div id="modCard-body"><p>Health pickups give 110% Multishot On Kill:<br>+30% Multishot dor 20s. Stacks up to 4x.</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Sentient Surge<br>Ocucor</p></div>
+          <div id="modCard-body"><p>Each target eliminated refills 20% of Ocucor's magazine. Status Chance and Critical Chance are increased by 60% for each tendril active.</P></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Primed Target Cracker</p></div>
+          <div id="modCard-body"><p>+110% Critical Damage</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Lethal Torrent</p></div>
+          <div id="modCard-body"><p>+60 Fire Rate<br>+60% Multishot</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Pistol Pestilence</p></div>
+          <div id="modCard-body"><p>+60% Toxin<br>+60% Status Chance</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Ice Storm</p></div>
+          <div id="modCard-body"><p>+40% Magazine Capacity<br>+40% Cold</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Primed Heated Charge</p></div>
+          <div id="modCard-body"><p>+165% Heat</p></div>
+        </div>
+        <br>
         <div></div>
 
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Galvanised Shot</td>
-                    <td class="right">12<img src="polVazarin.svg" alt="Vazarin Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+80% Status Chance<br>
-            On Kill:<br>
-            +40% Direct Damage per Status Type affecting the target for 14s.<br>
-            Stacks up to 3x</p>
+        <div class="arcaneCard">
+          <div id="arcaneCard-head"><p style="font-weight: 500; text-align: center">Secondary Enervate</p></div>
+          <div id="modCard-body"><p>On Hit: Increase Critical Chance by 10%. Resets after 6 Big Critical Hit.</p></div>
         </div>
-
-        <div class="card-4">
-          <div class ="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Galvanized Diffusion</td>
-                    <td class="right">14<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+110% Multishot<br>
-            On Kill:<br>
-            +30% Multishot for 20s.<br>
-            Stacks up to 4x.</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Sentient Surge</td>
-                    <td class="right">7<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>Each target eliminated refills 20% of Ocucor's magazine. Status Chance and Critical Chance are increased by 60% for each tendril active.</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Primed Target Cracker</td>
-                    <td class="right">14<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+110% Critical Damage</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Lethal Torrent</td>
-                    <td class="right">11<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+60% Fire Rate<br>
-          +60% Multishot</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Pistol Pestilence</td>
-                    <td class="right">7<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p style="color:lightgreen">+60% Toxin</p>
-          +60% Status Chance
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Ice Storm</td>
-                    <td class="right">9<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+40% Magazine Capacity</p>
-          <p style="color:aqua">+40% Cold</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Primed Heated Charge</td>
-                    <td class="right">16<img src="polNaramon.svg" alt="Naramon Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p style="color:orange">+165% Heat</p>
-        </div>
-
       </div>
-
+      <div class="ofNote">
+        <table>
+          <tbody>
+            <tr>
+              <td>Forma: 7</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
   </main>
 
   <footer>
     <div class="disclaimer">
-      <p>Site built and maintained by <a href="https://bsky.app/profile/siikr.bsky.social" target="_blank">Keith V</a><br>
-        <a href="https://www.warframe.com" target="_blank">Warframe</a> created by <a href="https://www.digitalextremes.com" target="_blank">Digital Extremes Ltd.</a> ©2025</p>
+      <p>Site built and maintained by <a href="https://bsky.app/profile/siikr.bsky.social" target="_blank">Siikr</a><p>Not affiliated with or endorsed by Digital Extremes Ltd.</p>
+      <a href="https://www.warframe.com" target="_blank">Warframe</a> created by <a href="https://www.digitalextremes.com" target="blank">Digital Extremes Ltd.</a> ©2026</p>
     </div>
   </footer>
-<body>
-  
+
 </body>
 </html>

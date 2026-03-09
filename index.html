@@ -4,191 +4,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="wf.css"/>
-  <script src="wffan.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Year In Review</title>
+  <title>Siikr - Year In Review</title>
 </head>
 <body>
   <header>
-    <div>
-      <span class="gold-box">LR2</span>
-      <span class="name">SIIKR</span>
+    <div class="headL">
+      <div id="semiCircle"></div>
+      <div id="gold-box">LR2</div>
+      <div id="name">SIIKR</div>
     </div>
-    <div class="semiCircle"></div>
-    </div>
-    <div>      
-      <span class="white-box">NS | PC | AOS</span>
+    <div class="headR">      
+        <img class="recolour" src="NS1.svg" alt="Nintendo Switch">
+        <img class="recolour" src="Steam.svg" alt="Steam">
+        <img class="recolour" src="AOS.svg" alt="Android">
     </div>
   </header>
 
   <main>
 
-    <div class="main-grid">
-
-      <div>
-
-        <div class="card-bg">
-        <h3>Updates</h3>
-
-          <div>
-            <div class="card-2">
-              <div class="card-head-1">
-              <p>The Shadowgrapher*</p>
-              </div>
-              <div id="Update">00:00:00</div>
-            </div>
-          </div>
-
-          <div>
-            <div class="card-2">
-              <div class="card-head-1">
-              <p>Next Frame:</p>
-              </div>
-              <p>Follie</p>
-            </div>
-          </div>
-
-          <div>
-            <div class="card-2">
-              <div class="card-head-1">
-              <p>Next Prime</p>
-              </div>
-              <div><p>Styanax*</p></div>
-            </div>
-            <p style="font-size: small;">Current Build: 41.1.2</p>
-          </div>
-        </div><br>
-
-        <div class="card-bg">
-        <h3>In Game</h3>
-
-          <div class="card-1">
-            <div class="card-head-1">
-              <p>Prime Resurgence</p>
-            </div>
-            <p>Atlas & Vauban</p>
-            <div class="card-head-1">
-              <p>Next:<br>
-              <p>? & ?</p>
-            </div>
-            <div id="Resurgence">00:00:00</div>
-          </div>
-
-          <div class="card-1">
-            <div class="card-head-1">
-              <p>Star Days</p>
-            </div>
-            <div id="IGE1">00:00:00</div></element>
-          </div>
-
-          <element hidden><div class="card-1">
-            <div class="card-head-1">
-              <p>Blood Of Perita*</p>
-            </div>
-            <div id="IGE2">00:00:00</div>
-          </div></element>
-
-          <element hidden><div class="card-1">
-            <div class="card-head-1">
-              <p>Nightwave</p>
-            </div>
-            <div id="Nightwave">00:00:00</div>
-          </div>
-        </div><br></element>
-
-        <div class="card-bg">
-        <h3>Twitch Streams</h3>
-
-          <div class="card-1">
-            <div class="card-head-1">
-              <p>Devshort</p>
-            </div>
-            <div>
-              <div id="DevShort">00:00:00</div>
-            </div>
-          </div>
-
-          <div class="card-1">
-            <div class="card-head-1">
-              <p>Emisión Tenno</p>
-              </div>
-              <div>
-              <div id="eTenno">00:00:00</div>
-            </div>
-          </div>
-
-          <div class="card-1">
-            <div class="card-head-1">
-              <p>Prime Time</p>
-              </div>
-              <div>
-              <div id="primeTime">00:00:00</div>
-            </div>
-          </div>
-
-          <div class="card-1">
-            <div class="card-head-1">
-              <p>Devstream</p>
-              </div>
-              <div>
-              <div id="Devstream">00:00:00</div>
-            </div>
-          </div>
-        </div><br>
+    <div>
+      <div class="Head">
+        <div><h2>Updates</h2></div>
+      <div class="subHead">41.1.2</div>
+    </div>
+      <div class="updateBar">
+        <div><p>The Shadowgrapher:<a style="color: var(--note);"></a></p></div>
+        <div style="text-align: right;" id="Update">00:00:00</div>
+        <div>Next Prime:<a style="color: var(--note)">*</a></div>
+        <div style="text-align: right;"><p>Styanax</p></div>
+        <div>New Warframe:</div>
+        <div style="text-align: right;">Follie</div>
+        <div>Star Days:</div>
+        <div style="text-align: right;" id="IGE1">00:00:00</div>
       </div>
+      <div id="pleaseNote"><p>* Prime Warframe to be confirmed</p></div>
+    </div>
 
-      <div>
-        <div class="note">
-          <p>The information found within this site is based on my 'Year In Review'. You can view your own Year In Review by <a href="https://www.warframe.com/year-in-review" target="_blank">clicking here</a> and log in to your Warframe account.</p>
-          <br>
-          <p>* Indicates speculation on my part and has not yet been confirmed by Digital Extremes.</p>
-        </div><br>
+    <div class="textTenno">
+      <div class="teach"><img class="recolour" src="TennoMessage.png" alt="Survivor on Vesper"></div>
+    </div>
 
-        <div><h2>Year In Review - 2025</h2></div>
-
-        <div class="main-sub">
-          <div class="arsenal">
-            <div onclick="document.location='frame.html'"><img src="Warframe.png" alt="Warframe, Ivara Prime"></div>Ivara Prime
-          </div>
-
-          <div class="arsenal">
-            <div onclick="document.location='primary.html'"><img src="Primary.png" alt="Primary Weapon, Fulmin"></div>Fulmin Prime
-          </div>
-
-          <div class="arsenal">
-            <div onclick="document.location='secondary.html'"><img src="Secondary.png" alt="Secondary Weapon, Ocucor"></div>Ocucor
-          </div>
-
-          <div class="arsenal">
-            <div onclick="document.location='melee.html'"><img src="Melee.png" alt="Melee Weapon, Praedos"></div>Praedos
-          </div>
-
-          <div class="arsenal">
-            <div onclick="document.location='companion.html'"><img src="Companion.png" alt="Companion, Carrier Prime"></div>Carrier Prime
-          </div>
+    <div class="Builds">
+      <div><h2>2025 Year In Review Loadout</h2><p style="color: var(--bold)">Select to view builds</p></div>
+    </div>
+    </div>
+      <div class="buildBar1">
+        <div class="arsenal">
+          <div onclick="document.location='frame.html'"><img src="Warframe.png" alt="Warframe, Ivara Prime"></div>
+          <div>Ivara Prime</div>
         </div>
-        <div>
-          <div class="progress" data-label="Equipment Mastery: 82%" style="--width: 82;"></div>
-        </div><br>
-
-        <div class="teach"><img class="recolour" src="TennoMessage.png" alt="Tenno, Shadow in the relay"></div>
-
+        <div class="arsenal">
+          <div onclick="document.location='primary.html'"><img src="Primary.png" alt="Primary, Fulmin Prime"></div>
+          <div>Fulmin Prime</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='secondary.html'"><img src="Secondary.png" alt="Secondary, Ocucor"></div>
+          <div>Ocucor</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='melee.html'"><img src="Melee.png" alt="Melee, Praedos"></div>
+          <div>Praedos</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='companion.html'"><img src="Companion.png" alt="Companion, Carrier Prime"></div>
+          <div>Carrier Prime</div>
+        </div>
       </div>
+      <div class="progress" data-label="Equipment Mastery: 82%" style="--width: 82;"></div>
+    </div><br>
+
+    <div class="corner">
+      <div class="content">
+        <h2>Current Objectives</h2>
+
+        <div id="priority"><h3>High Priority</h3><br>
+          <ul class="listParent">
+          Hunt Lich for:
+            <ul class="listChild">
+              <li>?</li>
+            </ul>
+          </ul>
+          <ul class="listParent">Farm for:
+            <ul class="listChild">
+              <li>Aya</li>
+              <li>Void Traces</li>
+              <li>Lua Thrax Plasm</li>
+            </ul>
+          </ul>
+        </div>
+        <div id="priority"><h3>Low Priority</h3><br>
+          <ul class="listParent">
+          Subsume Warframes:
+            <ul class="listChild">
+              <li>Citrine</li>
+              <li>Protea</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div><br>
+
+    <div>
+      <div class="Head"><h2>Prime Resurgence</h2></div>
+      <div class="buildBar2">
+        <div><p style="color: hsl(51, 100%, 50%);">Current:</p></div>
+        <div style="text-align: right; color: hsl(51, 100%, 50%)">Atlas & Vauban</div>
+        <div>Upcoming:</div>
+        <div style="text-align: right;">Nova & Trinity</div>
+      </div>
+      <div class="buildBar3"><div style="text-align: right;" id="Resurgence">00:00:00</div></div>
+    </div><br>
+
+    <div class="Head"><h2>Streams</h2></div>
+    <div class="timerBar">
+      <table>
+        <tbody>
+          <tr>
+            <td>Devshort:</td>
+            <td style="text-align: right;" id="DevShort">00:00:00</td>
+            <td>&nbsp</td>
+            <td>Emisión Tenno:</td>
+            <td style="text-align: right;" id="eTenno">00:00:00</td>
+          </tr>
+          <tr>
+            <td>Prime Time:</td>
+            <td style="text-align: right;" id="primeTime">00:00:00</td>
+            <td></td>
+            <td>Devstream:</td>
+            <td style="text-align: right;" id="Devstream">00:00:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="buildBar3">
+      <table>
+        <tbody>
+          <tr>
+            <td>TennoCon:</td>
+            <td style="text-align: right;" id="TennoCon">00:00:00</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
-    </div>
   </main>
 
   <footer>
     <div class="disclaimer">
-      <p>Site built and maintained by <a href="https://bsky.app/profile/siikr.bsky.social" target="_blank">Siikr</a><br>
+      <p>Site built and maintained by <a href="https://bsky.app/profile/siikr.bsky.social" target="_blank">Siikr</a><p>Not affiliated with or endorsed by Digital Extremes Ltd.</p>
       <a href="https://www.warframe.com" target="_blank">Warframe</a> created by <a href="https://www.digitalextremes.com" target="blank">Digital Extremes Ltd.</a> ©2026</p>
-    </div>    
+    </div>
   </footer>
-
+<script src="wffan.js"></script>
 </body>
-
 </html>
-
-
-

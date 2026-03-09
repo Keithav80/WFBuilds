@@ -5,223 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="wf.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Melee</title>
+  <title>Siikr - Melee Build</title>
 </head>
 <body>
   <header>
-    <div>
-      <span class="gold-box">L1</span>
-      <span class="name">SIIKR</span>
+    <div class="headL">
+      <div id="semiCircle"></div>
+      <div id="gold-box">LR2</div>
+      <div id="name">SIIKR</div>
     </div>
-    <div class="semiCircle"></div>
-    <div>      
-      <span class="white-box">Switch</span>
+    <div class="headR">      
+        <img class="recolour" src="NS1.svg" alt="Nintendo Switch">
+        <img class="recolour" src="Steam.svg" alt="Steam">
+        <img class="recolour" src="AOS.svg" alt="Android">
     </div>
   </header>
 
   <main>
-    <div class="frame-grid">
-      <nav>
-        <button class="button" onclick="document.location='index.html'">Home</button>
-        <button class="button" onclick="document.location='frame.html'">Warframe</button>
-        <button class="button" onclick="document.location='primary.html'">Primary</button>
-        <button class="button" onclick="document.location='secondary.html'">Secondary</button>
-        <button class="button-active" onclick="document.location='melee.html'">Melee</button>
-        <button class="button" onclick="document.location='companion.html'">Companion</button>
-        <element hidden><button class="button" onclick="document.location=''">Fashion</button></element>
-      </nav>
 
-      <div class="frame-grid-sub">
-        <div class="frame"><h2>Praedos</h2>
-          <div class="note-build">
-            <p>Forma: 2<br>
-            Incarnon Form -- Drifting Grace -- Adept Reflexes -- Evoled Ascension -- Universal Readiness</p>
-          </div>
-        </div>
-        
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Sovereign Outcast</td>
-                    <td class="right">5<img src="polNaramon.svg" alt="Naramon Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>An outlandish style with sweeping attacks.</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Condition's Perfection</td>
-                    <td class="right">7<img src="polVazarin.svg" alt="Vazarin Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>Enables Tennokai. Increases status chance by +100% on Tennokai attacks.</p>
-        </div>
-
-        <div class="card-3">
-          <div class="card-head-2">Melee Afflictions</div>
-          <p>Enemies affected by Status Effects gain 6 additional stacks when they're knocked down or flung by melee attacks.</p>
-        </div>
-
-        <div></div>
-        <div><br></div>
-        <div></div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Condition Overload</td>
-                    <td class="right">15<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+80% Melee Damage per Status Type affecting the target.</p>
-        </div>
-
-        <div class="card-4">
-          <div class ="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Organ Shatter</td>
-                    <td class="right">9<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+90% Critical Chance</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Primed Fever Strike</td>
-                    <td class="right">16<img src="polNaramon.svg" alt="Naramon Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p style="color:lightgreen">+165% Toxin</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Weeping Wounds</td>
-                    <td class="right">9<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+40% Status Chance per Combo Multiplier</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Reach</td>
-                    <td class="right">7<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+1.5 Range</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Quickening</td>
-                    <td class="right">9<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p>+40% Attack Speed<br>
-          +20% Combo Count Chance</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Shocking Touch</td>
-                    <td class="right">11<img src="polNaramon.svg" alt="Naramon Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p style="color:plum">+90% Electricity</p>
-        </div>
-
-        <div class="card-4">
-          <div class="card-head-1">
-            <div id="container">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="left">Magnetic Rush</td>
-                    <td class="right">7<img src="polMadurai.svg" alt="Madurai Polarity"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <p style="color:silver">+60% Magnetic</p>
-          <p>+20% Attack Speed</p>
-        </div>
-
+    <div>
+      <div class="Builds">
+        <div><h2>2025 Year In Review Loadout</h2><p style="color: var(--bold)">Select to view builds</p></div>
       </div>
+      <div class="buildBar-def">
+        <div class="arsenal">
+          <div onclick="document.location='frame.html'"><img src="Warframe.png" alt="Warframe, Ivara Prime"></div>
+          <div>Ivara Prime</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='primary.html'"><img src="Primary.png" alt="Primary Weapon, Fulmin Prime"></div>
+          <div>Fulmin Prime</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='secondary.html'"><img src="Secondary.png" alt="Secondary Weapon, Ocucor"></div>
+          <div>Ocucor</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='index.html'"><img src="LotusFlower.png" alt="Home"></div><br>
+          <div>Home</div>
+        </div>
+        <div class="arsenal">
+          <div onclick="document.location='companion.html'"><img src="Companion.png" alt="Companion, Carrier Prime"></div>
+          <div>Carrier Prime</div>
+      </div>
+    </div><br>
 
+    <div class="Head"><h2>Praedos</h2></div>
+      <div class="modWarframe">
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Condition's Perfection</p></div>
+          <div id="modCard-body"><p>Enables Tennokai. Increase Status chance by +100% on Tennokai attacks.</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Sovereign Outcast</p></div>
+          <div id="modCard-body"><p>An outlandish style with sweeping attacks.</p></div>
+        </div>
+        <div></div>
+        <br>
+
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Condition Overload</p></div>
+          <div id="modCard-body"><p>+80% Mele Damage per Status Type affecting the target.</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Organ Shatter</p></div>
+          <div id="modCard-body"><p>+90% Critical Damage</P></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Primed Fever Strike</p></div>
+          <div id="modCard-body"><p>+165% Toxin</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Weeping Wounds</p></div>
+          <div id="modCard-body"><p>+40 Status Chance per Combo Multiplier</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Reach</p></div>
+          <div id="modCard-body"><p>+1.5m Range</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Quickening</p></div>
+          <div id="modCard-body"><p>+40% Attack Speed<br>+20% Combo Count Chance</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Shocking Touch</p></div>
+          <div id="modCard-body"><p>+90% Electricity</p></div>
+        </div>
+        <div class="modCard">
+          <div id="modCard-head"><p style="font-weight: 500; text-align: center">Magnetic Rush</p></div>
+          <div id="modCard-body"><p>+60% Magnetic<br>+20% Attack Speed</p></div>
+        </div>
+        <br>
+        <div></div>
+
+        <div class="arcaneCard">
+          <div id="arcaneCard-head"><p style="font-weight: 500; text-align: center">Melee Afflictions</p></div>
+          <div id="modCard-body"><p>Enemies affected by Status Effects gain 4 additional stacks when they're knocked down or flung by melee attacks.</p></div>
+        </div>
+      </div>
+      <div class="ofNote">
+        <table>
+          <tbody>
+            <tr>
+              <td>Forma: 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+
   </main>
 
   <footer>
     <div class="disclaimer">
-      <p>Site built and maintained by <a href="https://bsky.app/profile/siikr.bsky.social" target="_blank">Keith V</a><br>
-        <a href="https://www.warframe.com" target="_blank">Warframe</a> created by <a href="https://www.digitalextremes.com" target="_blank">Digital Extremes Ltd.</a> ©2025</p>
+      <p>Site built and maintained by <a href="https://bsky.app/profile/siikr.bsky.social" target="_blank">Siikr</a><p>Not affiliated with or endorsed by Digital Extremes Ltd.</p>
+      <a href="https://www.warframe.com" target="_blank">Warframe</a> created by <a href="https://www.digitalextremes.com" target="blank">Digital Extremes Ltd.</a> ©2026</p>
     </div>
   </footer>
-<body>
-  
+
 </body>
 </html>
