@@ -1,5 +1,4 @@
 function countdown(date, elementId, resetIntervalInDays = null, targetTimezoneOffset = -5) {
-  // targetTimezoneOffset: UTC offset in hours (e.g. 0 = UTC, 1 = BST, -5 = EST)
   
   const localOffsetMs = new Date().getTimezoneOffset() * 60 * 1000;
   const targetOffsetMs = targetTimezoneOffset * 60 * 60 * 1000;
@@ -12,7 +11,6 @@ function countdown(date, elementId, resetIntervalInDays = null, targetTimezoneOf
 
   function updateCountdown() {
     let x = setInterval(function () {
-      // Recalculate offset on every tick to account for DST transitions
       const currentLocalOffsetMs = new Date().getTimezoneOffset() * 60 * 1000;
 
       let now = new Date().getTime();
@@ -47,7 +45,7 @@ function countdown(date, elementId, resetIntervalInDays = null, targetTimezoneOf
 window.onload = function () {
 
   // Static Countdowns
-  countdown("2026-03-25 16:00:00", "Update"); // Mainline Updates
+  countdown("2026-03-25 15:00:00", "Update"); // Mainline Updates
   countdown("2026-04-02 15:30:00", "IGE1"); // Seasonal Event
   countdown("2025-12-16 16:00:00", "IGE2"); // Misc Event
   countdown("2026-03-28 19:00:00", "Devstream"); // Last Friday of each month. No stream in December.
