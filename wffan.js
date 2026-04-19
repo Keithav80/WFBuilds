@@ -48,7 +48,7 @@ window.onload = function () {
   countdown("2026-03-25 15:00:00", "Update"); // Mainline Updates
   countdown("2026-04-02 15:30:00", "IGE1"); // Seasonal Event
   countdown("2025-12-16 16:00:00", "IGE2"); // Misc Event
-  countdown("2026-03-28 19:00:00", "Devstream"); // Last Friday of each month. No stream in December.
+  countdown("2026-04-24 19:00:00", "Devstream"); // Last Friday of each month. No stream in December.
   countdown("2026-07-11 16:00:00", "TennoCon"); // TennoCon
 
   // Auto-resetting Countdowns
