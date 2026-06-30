@@ -43,17 +43,17 @@ function countdown(date, elementId, resetIntervalInDays = null, targetTimezoneOf
 }
 
 window.onload = function () {
-  document.getElementById("gold-box").textContent = "LR2";
+  document.getElementById("gold-box").textContent = "LR3";
 
   // Static Countdowns
-  countdown("2026-06-17 15:00:00", "Update"); // Mainline Updates
+  countdown("2026-10-21 15:00:00", "Update"); // Mainline Updates
   countdown("2026-05-04 15:30:00", "IGE1"); // Seasonal Event
   countdown("2025-12-16 16:00:00", "IGE2"); // Misc Event
-  countdown("2026-06-26 19:00:00", "Devstream"); // Last Friday of each month. No stream in December.
+  countdown("2026-08-28 19:00:00", "Devstream"); // Last Friday of each month. No stream in December.
   countdown("2026-07-11 16:00:00", "TennoCon"); // TennoCon
 
   // Auto-resetting Countdowns
-  countdown("2026-02-17 18:00:00", "DevShort", 7); // Tuesday
+  countdown("2026-07-14 18:00:00", "DevShort", 7); // Tuesday
   countdown("2026-02-11 19:00:00", "eTenno", 7); // Wednesday
   countdown("2026-02-12 22:00:00", "primeTime", 7); // Thursday
   countdown("2026-02-19 17:00:00", "Resurgence", 28); // 28 day rotation, except - December to February  
