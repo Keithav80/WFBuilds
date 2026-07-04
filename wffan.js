@@ -54,7 +54,7 @@ window.onload = function () {
 
   // Auto-resetting Countdowns
   countdown("2026-07-14 18:00:00", "DevShort", 7); // Tuesday
-  countdown("2026-02-11 19:00:00", "eTenno", 7); // Wednesday
-  countdown("2026-02-12 22:00:00", "primeTime", 7); // Thursday
+  countdown("2026-07-15 19:00:00", "eTenno", 7); // Wednesday
+  countdown("2026-07-16 22:00:00", "primeTime", 7); // Thursday
   countdown("2026-02-19 17:00:00", "Resurgence", 28); // 28 day rotation, except - December to February  
 };
