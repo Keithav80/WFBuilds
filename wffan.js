@@ -43,13 +43,13 @@ function countdown(date, elementId, resetIntervalInDays = null, targetTimezoneOf
 }
 
 window.onload = function () {
-  document.getElementById("gold-box").textContent = "LR3";
+  document.getElementById("gold-box").textContent = "LR4";
 
   // Static Countdowns
   countdown("2026-09-23 15:00:00", "Update"); // Mainline Updates
   countdown("2026-08-04 16:00:00", "IGE1"); // Seasonal Event
   countdown("2026-10-15 16:00:00", "IGE2"); // Misc Event
-  countdown("2026-09-04 19:00:00", "Devstream"); // Last Friday of each month. No stream in December.
+  countdown("2026-10-30 19:00:00", "Devstream"); // Last Friday of each month. No stream in December.
   countdown("2027-07-16 16:00:00", "TennoCon"); // TennoCon
 
   // Auto-resetting Countdowns
